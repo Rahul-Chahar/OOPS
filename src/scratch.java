@@ -1,30 +1,24 @@
-/*
- *Author Name: Rahul Chahar
- *IDE: IntelliJ IDEA Community Edition
- *Date: 15/01/2022
- */
-import java.util.*;
-public class scratch {
-    public static void main(String args[]){
+import java.util.Scanner;
+
+public class scratch{
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int A[] = new int[n];
-        for(int i=0; i<A.length; i++){
-            A[i] = sc.nextInt();
-            //System.out.print(A[i]+" ");
-        }
-        //System.out.print(A[i]+" ");
-        Arrays.sort(A);
+        for(int j =0; j<n; j++){
 
-        for(int i =0; i<A.length; i++ ){
-            for(int j=i+1; j<A.length; j++){
-                if(A[i] == A[j]){
-                    System.out.print(A[i]);
-                }
-               // System.out.print(Arrays.sort(A));
+        int a= sc.nextInt();
+        int b =sc.nextInt();
+        int c =sc.nextInt();
 
+        for(int i=c; i>=1; i--){
+            if(i%a==b) {
+                System.out.println(i);
+                break;
             }
+            // System.exit(0);
+            }
+
         }
-       // System.out.print(Arrays.sort(A));
+        System.out.println("-1");
     }
 }
